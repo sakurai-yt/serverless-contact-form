@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>お問い合わせフォーム</h1>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name-input">お名前:</label>
+                <input type="text" id="name-input" name="name" placeholder="お名前を入力してください" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">件名:</label>
+                <input type="text" id="subject" name="subject" placeholder="件名を入力してください" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email-input">メールアドレス:</label>
+                <input type="email" id="email-input" name="email" placeholder="メールアドレスを入力してください" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description-input">内容:</label>
+                <textarea id="description-input" name="desc" placeholder="お問い合わせ内容を入力してください" required></textarea>
+            </div>
+
+            <button type="submit" id="submit-button">送信</button>
+        </form>
+
+    </div>
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScriptのコードを読み込む -->
+    <script src="submit.js"></script>
+</body>
+</html>
